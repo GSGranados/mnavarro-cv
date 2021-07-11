@@ -11,8 +11,18 @@
 html {
   font-size: 62.5%;
   box-sizing: inherit;
+  --bg-white: #f7f6f2;
+  --bg-white2: #ebebeb;
+  --text-color: #111111;
+  --accent-blue: #1e1ebb;
+  --accent-blue2: #2f80ed;
+  --accent-purple: #dcc6e0;
+  --accent-turquoise: #0593a7;
+  --accent-magenta: #9b51e0;
+  --footer-bg: #1e2528;
 }
 body {
   font-weight: 300;
   font-family: "Rubik", sans-serif;
+  background-color: var(--bg-white);
 }
