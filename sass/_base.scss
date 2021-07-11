@@ -1,0 +1,18 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+//font-family: 'Sorts Mill Goudy', serif;
+
+html {
+  font-size: 62.5%;
+  box-sizing: inherit;
+}
+body {
+  font-weight: 300;
+  font-family: "Rubik", sans-serif;
+}
