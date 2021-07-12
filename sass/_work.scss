@@ -3,6 +3,19 @@
   padding: 2.5rem 12rem;
   padding-bottom: 10rem;
 
+  @media screen and (max-width: 78.125em) {
+    padding: 2.5rem 10rem;
+    padding-bottom: 10rem;
+  }
+  @media screen and (max-width: 62.5em) {
+    padding: 2.5rem 3rem;
+    padding-bottom: 6rem;
+  }
+  @media screen and (max-width: 25.625em) {
+    padding: 1.5rem 3rem;
+    padding-bottom: 4rem;
+  }
+
   &__cta {
     width: 100%;
     margin: 0 auto;
@@ -19,5 +32,22 @@
     color: var(--text-color);
     border: 0.3rem solid var(--accent-magenta);
     border-radius: 15px;
+    transition: all 0.25s ease;
+
+    &:hover {
+      background-color: var(--accent-magenta);
+      color: #fff;
+    }
+
+    @media screen and (max-width: 69.375em) {
+      font-size: 1.75rem;
+    }
+    @media screen and (max-width: 52.5em) {
+      font-size: 1.5rem;
+      padding: 1.75rem 2rem;
+    }
+    @media screen and (max-width: 25.625em) {
+      font-size: 1.3rem;
+    }
   }
 }

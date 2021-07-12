@@ -21,8 +21,47 @@ html {
   --accent-magenta: #9b51e0;
   --footer-bg: #1e2528;
 }
+
+html[data-theme="dark"] {
+  --bg-white: #1e2528;
+  --bg-white2: #3c4649;
+  --text-color: #ffffff;
+  --accent-blue: #1e1ebb;
+  --accent-blue2: #2f80ed;
+  --accent-purple: #27ae60;
+  --accent-turquoise: #0593a7;
+  --accent-magenta: #9b51e0;
+  --footer-bg: #1e2528;
+}
+
+$xl-break: 93.75em;
+$xl-break2: 87.5em;
+$bg-break: 78.125em;
+$bg-break2: 69.375em;
+$md-break: 62.5em;
+$md-break2: 57.8125em;
+$md-break3: 56.25em;
+/*THE UI Transitions to Mobile*/
+$md-break-mobile: 52.5em;
+$sm-break: 46.875em;
+$sm-break2: 37.5em;
+$xs-break: 31.25em;
+$xs-break2: 29.375em;
+$xs-break3: 28.125em;
+$xs-break4: 25.625em;
+$xs-break5: 22.1875em;
+
 body {
   font-weight: 300;
   font-family: "Rubik", sans-serif;
   background-color: var(--bg-white);
+  color: var(--text-color);
+}
+
+html.transition,
+html.transition *,
+html.transition *::before,
+html.transition *::after {
+  transition: all 0.085s ease !important;
+  transition-delay: 0 !important;
 }
